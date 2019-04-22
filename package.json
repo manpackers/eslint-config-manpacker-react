@@ -1,13 +1,14 @@
 {
   "name": "eslint-config-manpacker-react",
-  "version": "1.1.0",
-  "description": "Reactjs project 'manpacker-react' code style",
+  "version": "1.1.1",
+  "description": "Reactjs project eslint code style",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "lint": "eslint ./test --config=index.js"
+    "lint": "eslint ./test --config=index.js",
+    "test": "npm run lint"
   },
   "repository": {
     "type": "git",
@@ -24,7 +25,7 @@
     "check"
   ],
   "author": {
-    "name": "WinterFete"
+    "name": "winterfete"
   },
   "license": "MIT",
   "bugs": {
@@ -32,7 +33,7 @@
   },
   "homepage": "https://github.com/manpackers/eslint-config-manpacker-react#readme",
   "dependencies": {
-    "eslint-config-manpacker": "^1.1.0",
+    "eslint-config-manpacker": "^1.1.1",
     "eslint-plugin-react": "^7.12.4"
   },
   "devDependencies": {

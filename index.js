@@ -7,7 +7,7 @@ module.exports = {
   extends: ['manpacker'],
   rules: {
     'react/jsx-uses-vars': 'error',
-    'react/jsx-curly-spacing': ['error', { 'when': 'always', 'children': true }],
+    'react/jsx-curly-spacing': ['error', { 'when': 'never', 'children': true }],
     'react/prefer-es6-class': 'error',
     'react/react-in-jsx-scope': 'error',
     'react/self-closing-comp': 'warn',
@@ -22,6 +22,40 @@ module.exports = {
     'react/jsx-sort-props': 'error',
     'react/jsx-uses-react': 'warn',
     'react/no-unknown-property': 'error',
-    'react/jsx-closing-bracket-location': 'error'
+    'react/jsx-closing-bracket-location': 'error',
+    "react/sort-comp": ["error", {
+      "order": [
+        "init",
+        "everything-else",
+        "lifecycles",
+        "render"
+      ],
+      "groups": {
+        "init": [
+          "displayName",
+          "propTypes",
+          "contextTypes",
+          "childContextTypes",
+          "mixins",
+          "statics",
+          "defaultProps",
+          "getDefaultProps",
+          "getInitialState",
+          "state",
+          "getChildContext",
+          "constructor"
+        ],
+        "lifecycles": [
+          "componentWillMount",
+          "componentDidMount",
+          "componentWillReceiveProps",
+          "shouldComponentUpdate",
+          "componentWillUpdate",
+          "componentDidUpdate",
+          "componentDidCatch",
+          "componentWillUnmount"
+        ]
+      }
+    }]
   }
 }

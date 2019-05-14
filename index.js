@@ -4,5 +4,8 @@ module.exports = {
     ReactDOM: false
   },
   plugins: ['react'],
-  extends: ['manpacker']
+  extends: ['manpacker'],
+  rules: {
+    'react/jsx-uses-vars': 'error'
+  }
 }

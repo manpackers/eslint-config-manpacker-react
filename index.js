@@ -23,7 +23,7 @@ module.exports = {
     'react/jsx-uses-react': 'warn',
     'react/no-unknown-property': 'error',
     'react/jsx-closing-bracket-location': 'error',
-    "react/sort-comp": ["error", {
+    "react/sort-comp": ["warn", {
       "order": [
         "init",
         "everything-else",

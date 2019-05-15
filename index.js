@@ -60,7 +60,6 @@ module.exports = {
     'react/no-find-dom-node': 'warn',
     'react/jsx-max-depth': ['warn', { 'max': 3 }],
     'react/no-this-in-sfc': 'error',
-    'react/prefer-stateless-function': 'error',
     'react/sort-prop-types': 'warn',
     'react/static-property-placement': 'error'
   }

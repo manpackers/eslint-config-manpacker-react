@@ -23,39 +23,45 @@ module.exports = {
     'react/jsx-uses-react': 'warn',
     'react/no-unknown-property': 'error',
     'react/jsx-closing-bracket-location': 'error',
-    "react/sort-comp": ["warn", {
-      "order": [
-        "init",
-        "everything-else",
-        "lifecycles",
-        "render"
+    'react/sort-comp': ['warn', {
+      'order': [
+        'init',
+        'everything-else',
+        'lifecycles',
+        'render'
       ],
-      "groups": {
-        "init": [
-          "displayName",
-          "propTypes",
-          "contextTypes",
-          "childContextTypes",
-          "mixins",
-          "statics",
-          "defaultProps",
-          "getDefaultProps",
-          "getInitialState",
-          "state",
-          "getChildContext",
-          "constructor"
+      'groups': {
+        'init': [
+          'displayName',
+          'propTypes',
+          'contextTypes',
+          'childContextTypes',
+          'mixins',
+          'statics',
+          'defaultProps',
+          'getDefaultProps',
+          'getInitialState',
+          'state',
+          'getChildContext',
+          'constructor'
         ],
-        "lifecycles": [
-          "componentWillMount",
-          "componentDidMount",
-          "componentWillReceiveProps",
-          "shouldComponentUpdate",
-          "componentWillUpdate",
-          "componentDidUpdate",
-          "componentDidCatch",
-          "componentWillUnmount"
+        'lifecycles': [
+          'componentWillMount',
+          'componentDidMount',
+          'componentWillReceiveProps',
+          'shouldComponentUpdate',
+          'componentWillUpdate',
+          'componentDidUpdate',
+          'componentDidCatch',
+          'componentWillUnmount'
         ]
       }
-    }]
+    }],
+    'react/no-find-dom-node': 'warn',
+    'react/jsx-max-depth': ['warn', { 'max': 3 }],
+    'react/no-this-in-sfc': 'error',
+    'react/prefer-stateless-function': 'error',
+    'react/sort-prop-types': 'warn',
+    'react/static-property-placement': 'error'
   }
 }

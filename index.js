@@ -4,7 +4,10 @@ module.exports = {
     ReactDOM: false
   },
   plugins: ['react'],
-  extends: ['manpacker'],
+  extends: ['meipian'],
+  settings: {
+    react: { version: 'detect' }
+  },
   rules: {
     'react/jsx-uses-vars': 'error',
     'react/jsx-curly-spacing': ['error', { 'when': 'never', 'children': true }],
@@ -17,13 +20,14 @@ module.exports = {
     'no-mixed-spaces-and-tabs': 'warn',
     'jsx-quotes': ['error', 'prefer-double'],
     'react/jsx-key': 'error',
-    'react/jsx-max-props-per-line': ['warn', { 'maximum': 1 }],
+    'react/jsx-max-props-per-line': ['error', { 'maximum': 1 }],
     'react/jsx-no-duplicate-props': 'error',
     'react/jsx-sort-props': 'error',
     'react/jsx-uses-react': 'warn',
     'react/no-unknown-property': 'error',
     'react/jsx-closing-bracket-location': 'error',
-    'react/sort-comp': ['warn', {
+    'react/no-multi-comp': 'error',
+    'react/sort-comp': [1, {
       'order': [
         'init',
         'everything-else',
@@ -61,6 +65,9 @@ module.exports = {
     'react/jsx-max-depth': ['warn', { 'max': 3 }],
     'react/no-this-in-sfc': 'error',
     'react/sort-prop-types': 'warn',
-    'react/static-property-placement': 'error'
+    'react/static-property-placement': 'error',
+    'react/jsx-indent-props': ['error', 'first'],
+    'react/jsx-indent': ['error', 2, { checkAttributes: false, indentLogicalExpressions: false }],
+    'react/jsx-equals-spacing': ['error', 'never']
   }
 }

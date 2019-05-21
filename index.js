@@ -25,7 +25,7 @@ module.exports = {
     'react/jsx-sort-props': 'error',
     'react/jsx-uses-react': 'warn',
     'react/no-unknown-property': 'error',
-    'react/jsx-closing-bracket-location': 'error',
+    'react/jsx-closing-bracket-location': 'off',
     'react/no-multi-comp': 'error',
     'react/sort-comp': [1, {
       'order': [

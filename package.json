@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-manpacker-react",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "description": "Reactjs project eslint code style",
   "main": "index.js",
   "directories": {

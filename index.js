@@ -4,7 +4,7 @@ module.exports = {
     ReactDOM: false
   },
   plugins: ['react'],
-  extends: ['meipian'],
+  extends: ['manpacker'],
   settings: {
     react: { version: 'detect' }
   },
